@@ -1,4 +1,3 @@
-
 /*.color1 { #4e031e };
 .color2 { #5d2d4e };
 .color3 { #5a4c6e };
@@ -17,14 +16,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-div {
+
+.escolha1 {
     padding: 50px 80px 50px;
     display: grid;
     place-content: center;
     background: black
 }
 
-.task{
+.task {
     font-size: 65px;
     width: 105%;
     padding: 20px 0;
@@ -33,15 +33,16 @@ div {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-family: 'Bangers', cursive;}
+    font-family: 'Bangers', cursive;
+}
 
-section {
-    border-bottom: 4px solid white ;
+.escolha2 {
+    border-bottom: 4px solid white;
 
     border-image: var(--gradiente) 1;
 }
 
-ul {
+.A1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -49,11 +50,11 @@ ul {
     background-color: black;
 }
 
-li {
+.A2 {
     float: left;
 }
 
-li a {
+.A2 .A3 {
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     color: white;
@@ -62,23 +63,34 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.A2 .A3:hover {
     background-color: #730cb4;
 }
 
 
-/*:root {
-    --gradiente: linear-gradient(to right, rgb(78 3 30), rgb(93 45 78), rgb(90 76 110), rgb(68 115 144), rgb(5 161 173))
-}*/
-
 :root {
-    --gradiente: linear-gradient(to right, rgb(255 0 146), rgb(255 202 27), rgb(182 255 0), rgb(34 141 255), rgb(186 1 255))
+    --gradiente: linear-gradient(to right, rgb(255 0 146), rgb(186 10 255), rgb(34 125 255) );
 }
 
+/*:root {
+    --gradiente: linear-gradient(to right, rgb(255 0 146), rgb(255 202 27), rgb(182 255 0), rgb(34 141 255), rgb(186 1 255))
+} 78 3 30    5 161 173 */
+
 .container {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
-    border: 8px solid blue;
     display: grid;
     grid-template-areas: "main";
+}
+.titulo {
+    text-align: center;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12;
+    line-height: 1.5;
+    margin-top: 3cm;
+    margin-left: 3cm;
+    margin-right: 2cm;
+    margin-bottom: 2cm;
 }
