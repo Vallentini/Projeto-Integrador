@@ -21,7 +21,8 @@
     padding: 50px 80px 50px;
     display: grid;
     place-content: center;
-    background: black
+    background-image: url(Imagens/NoiteEstrelada.png);
+    background-size: 100%;
 }
 
 .task {
@@ -29,17 +30,14 @@
     width: 105%;
     padding: 20px 0;
     display: flex;
-    background-image: var(--gradiente);
+    color: black;
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
     font-family: 'Bangers', cursive;
 }
 
 .escolha2 {
-    border-bottom: 4px solid white;
-
-    border-image: var(--gradiente) 1;
+    border-bottom: 4px solid rgb(0, 0, 0);
 }
 
 .A1 {
