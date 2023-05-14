@@ -83,6 +83,9 @@
     margin: 0 auto;
     display: grid;
     grid-template-areas: "main";
+    background-color: #d3d3d386;
+    width: 100%;
+    height: 100vh;
 }
 .titulo {
     text-align: center;
@@ -103,3 +106,12 @@ main{
  #3258A6 - AZUL
  #F2EEAC - AMARELO
  #021373 - AZUL*/
+
+ .A3:hover{
+    color: black;
+    transition: 0.8s;
+ }
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
