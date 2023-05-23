@@ -111,7 +111,7 @@ main{
     color: black;
     transition: 0.8s;
  }
-p{
+.conteudoDentro{
     text-align: justify;
     text-indent: 50px;
 }
