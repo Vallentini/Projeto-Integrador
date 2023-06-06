@@ -97,3 +97,22 @@
     color: black;
     transition: 0.8s;
  }
+
+ .A4{
+    font-size: 40px;
+    font-family:'DM Serif Display', serif; 
+    color: #3258A6;
+ } /*rgb(255, 242, 56);*/
+
+ .A4A5{
+    font-size: 20px;
+    color: #3258A6;
+    
+ }
+ 
+ .A5{
+    font-size: 50px;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Ultra', serif; 
+    color: rgb(255, 185, 56)
+ } /*#072bf5;*\
