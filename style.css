@@ -109,10 +109,27 @@
     color: #3258A6;
     
  }
+
+ .card-item{
+    background-color: rgb(149, 207, 255);
+    height: 300px;
+    width: 400Px;
+    border-width: 5px 5px 5px 5px;
+    border-top-style: solid;
+    border-top-color: #F2EEAC;
+ }
+ p.div{
+    font-size: 80px;
+    font-family:'Roboto Condensed', sans-serif;
+    color: black;
+    margin-top: 10px;
+ }
  
  .A5{
-    font-size: 50px;
+    font-size: 38px;
     font-family: 'DM Serif Display', serif;
     font-family: 'Ultra', serif; 
     color: rgb(255, 185, 56)
  } /*#072bf5;*\
+
+ 
