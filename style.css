@@ -110,9 +110,46 @@
     
  }
  
+ body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient( rgb(150, 173, 238), rgb(123, 164, 224) );
+ }
+ 
+ .search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    background: #2a6f9e;
+    height: 50px;
+    padding: 10px;
+    border-radius:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .search-txt{
+    border:none;
+    background: none;
+    outline:none;
+    padding: 0;
+    color: #F2A81D;
+    font-size: 20px;
+    line-height: 40px; 
+
+ }
+ 
  .A5{
     font-size: 50px;
     font-family: 'DM Serif Display', serif;
     font-family: 'Ultra', serif; 
     color: rgb(255, 185, 56)
- } /*#072bf5;*\
+ } /*#072bf5;/
+
+ 
+
+
+
+
