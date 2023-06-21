@@ -46,7 +46,11 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#3258A6;
+    background-color: #3258A6;
+    border-color: #020F59;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
 .A2 {
@@ -56,7 +60,7 @@
 .A2 .A3 {
     font-family: Arial, Helvetica, sans-serif;
     display: block;
-    color: #F2D852;/*#F2A81D;*/
+    color: rgb(242 168 29);/*#F2A81D;3258A6*/
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -110,11 +114,11 @@
     
  }
  .card-item{
-    
-    background-color: #3258A6;
+    padding-left: 10px;
+    background-color: #ffffff;
     width: 400px;
     height: 300px;
-    border-color: rgb(242 168 29);
+    border-color: #F2D479;
     border-width: 15px;
     border-style: solid;
     border-radius: 15px;
@@ -124,7 +128,7 @@
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    color: rgb(248 218 69);
+    color: rgb(0, 0, 0);
  }
  
  .A5{
@@ -133,8 +137,18 @@
     font-family: 'DM Serif Display', serif;
     font-family: 'Ultra', serif; 
     color: rgb(242 168 29);
- } /*#072bf5;/
+ } /*#072bf5;*/
 
+
+
+ .containerVan{
+    max-width: 1230px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "main";
+    width: 100%;
+    height: 100vh;
+ }
  
 
 
