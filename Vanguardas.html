@@ -11,13 +11,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet" />
 </head>
-
+<style>
+  .carditem{
+    padding-left: 20px;
+    background-color: #ffffff;
+    width: 1050px;
+    height: 1000px;
+    border-color: rgb(242 168 29);
+    border-width: 15px;
+    border-style: solid;
+    border-radius: 15px;
+    display: inline-block;
+  }
+</style>
 <body style="background-color: #3258A6">
-  <div class="escolha1">
-    <section class="escolha2">
-      <h1 class="task">História da Arte</h1>
-    </section>
-  </div>
   <ul class="A1">
     <li class="A2"><a class="A3" href="index.html"> Home </a></li>
     <li class="A2">
@@ -33,12 +40,27 @@
       <a class="A3" href="Fauvismo.html">Fauvismo</a>
     </li>
     <li class="A2"><a class="A3" href="Sambaqui.html">Sambaqui</a></li>
+    <div class="search-box">
+      <input type="text" class="search-txt" placeholder="Pesquisar">
+      <a href="#" class="search-btn">
+        <img src="icons8-lupa.svg" alt="Lupa" height="30
+          " width="30">
+      </a>
+    </div>
   </ul>
+  <div class="escolha1">
+    <section class="escolha2">
+      <h1 class="task">História da Arte</h1>
+    </section>
+  </div>
+  
+  <br>
   <section class="containerVan">
     <main class="conteudo">
-      <p class="titulo">VANGUARDAS EUROPÉIAS</p>
+      <div class="carditem">
+      <h1 class="A5">VANGUARDAS EUROPÉIAS</h1>
       <br />
-      <p class="conteudoDentro" style="color: rgb(242 168 29)">
+      <p class="conteudoDentro">
         As vanguardas europeias são um conjunto de tendências artísticas que
         provocaram uma ruptura na tradição cultural do século XIX. Elas
         surgiram entre os períodos que antecederam e sucederam a Primeira
@@ -83,7 +105,7 @@
       </p>
       <br>
       <br>
-      <p class="titulo">REFERÊNCIAS</p>
+      <h1 class="A5">REFERÊNCIAS</h1>
       <br>
       <p class="referencia">
         BRANDINO, Luiza."Vanguardas europeias".Disponível em
@@ -99,6 +121,7 @@
         REDAÇÃO. “As vanguardas europeias que influenciaram o modernismo brasileiro”
         Disponível em https://ead.umc.br/blog/vanguardas-europeias. Acesso em 21 maio 2023.
       </p>
+      </div>
     </main>
   </section>
 </body>
