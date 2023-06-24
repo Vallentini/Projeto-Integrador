@@ -18,10 +18,10 @@
 }
 
 .escolha1 {
-    padding: 50px 80px 50px;
+    padding: 60px 90px 60px;
     display: grid;
     place-content: center;
-    background-image: url(Imagens/noiteVan.png);
+    background-image: url(Imagens/arte1_3.jpeg);
     background-size: 103%;
 }
 
@@ -60,7 +60,8 @@
 .A2 .A3 {
     font-family: Arial, Helvetica, sans-serif;
     display: block;
-    color: rgb(242 168 29);/*#F2A81D;3258A6*/
+    color: rgb(242 168 29);
+    /*#F2A81D;3258A6*/
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -80,8 +81,9 @@
 } 78 3 30    5 161 173 */
 
 :root {
-    --gradiente: linear-gradient(to right, rgb(242 168 29), rgb(248 218 69) );
+    --gradiente: linear-gradient(to right, rgb(242 168 29), rgb(248 218 69));
 }
+
 .container {
     max-width: 1230px;
     margin: 0 auto;
@@ -90,6 +92,7 @@
     width: 100%;
     height: 100vh;
 }
+
 /*COLOR -
  #F2A81D - LARANJA
  #F2D852 - AMARELO
@@ -97,25 +100,29 @@
  #F2EEAC - AMARELO
  #021373 - AZUL*/
 
- .A3:hover{
+.A3:hover {
     color: black;
     transition: 0.8s;
- }
+}
 
- .A4{
+.A4 {
     font-size: 40px;
-    font-family:'DM Serif Display', serif; 
+    font-family: 'DM Serif Display', serif;
     color: #3258A6;
- } /*rgb(255, 242, 56);*/
+}
 
- .A4A5{
+/*rgb(255, 242, 56);*/
+
+.A4A5 {
     font-size: 20px;
     color: #3258A6;
-    
- }
- .card-item{
-    padding-left: 10px;
-    background-color: #ffffff;
+
+}
+
+.card-item {
+    text-align: center;
+    padding-left: 5px;
+    background-color: #F2EEAC;
     width: 400px;
     height: 300px;
     border-color: rgb(242 168 29);
@@ -123,36 +130,103 @@
     border-style: solid;
     border-radius: 15px;
     display: inline-block;
- }
- .pa{
+}
+
+.pa {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Itim', cursive;
+    font-family: 'Tinos', serif;
+    font-family: 'VT323', monospace;
+    font-size: 23px;
     color: rgb(0, 0, 0);
- }
- 
- .A5{
+}
+
+.A5 {
     text-align: center;
     font-size: 35px;
     font-family: 'DM Serif Display', serif;
-    font-family: 'Ultra', serif; 
+    font-family: 'Ultra', serif;
     color: rgb(242 168 29);
- } /*#072bf5;*/
+}
+
+/*#072bf5;*/
 
 
 
- .containerVan{
+.containerVan {
     max-width: 1230px;
     margin: 0 auto;
     display: grid;
     grid-template-areas: "main";
     width: 100%;
     height: 100vh;
- }
+}
 
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        background-color: #3258A6;
 
+    }
 
+    .container__imagem {
+        width: 50vw;
+    }
 
+    .container__caixa {
+        margin: 2em 2em;
+    }
 
+    .card-item {
+        margin: 2em 2em;
+        text-align: center;
+        padding-left: 5px;
+        background-color: #F2EEAC;
+        width: 200px;
+        height: 180px;
+        border-color: rgb(242 168 29);
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 5px;
+        display: inline-block;
+    }
 
- 
+    .pa {
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'DM Serif Display', serif;
+        font-family: 'Itim', cursive;
+        font-family: 'Tinos', serif;
+        font-family: 'VT323', monospace;
+        font-size: 13px;
+        color: rgb(0, 0, 0);
+    }
+
+    .A5 {
+        text-align: center;
+        font-size: 18px;
+        font-family: 'DM Serif Display', serif;
+        font-family: 'Ultra', serif;
+        color: rgb(242 168 29);
+    }
+
+    main.conteudo {
+        display: inline-block;
+        grid-template-columns: auto auto;
+    }
+
+    .escolha1 {
+        padding: 15px 60px 15px;
+        display: grid;
+        place-content: center;
+        background-image: url(Imagens/arte1_3.jpeg);
+        background-size: 103%;
+    }
+
+    .secundário{
+        margin: 0;
+        text-align: center;
+    }
+}
