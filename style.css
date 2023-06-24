@@ -157,7 +157,6 @@
 
 .containerVan {
     max-width: 1230px;
-    margin: 0 auto;
     display: grid;
     grid-template-areas: "main";
     width: 100%;
