@@ -161,21 +161,24 @@
     grid-template-areas: "main";
     width: 100%;
     height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 856px) {
     .container {
         display: block;
         background-color: #3258A6;
 
     }
 
-    .container__imagem {
-        width: 50vw;
-    }
-
-    .container__caixa {
-        margin: 2em 2em;
+    .containerVan {
+        max-width: 856px;
+        display: grid;
+        grid-template-areas: "main";
+        width: 100%;
+        height: 100vh;
     }
 
     .card-item {
@@ -224,7 +227,7 @@
         background-size: 103%;
     }
 
-    .secundário{
+    .secundário {
         margin: 0;
         text-align: center;
     }
