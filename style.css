@@ -18,10 +18,10 @@
 }
 
 .escolha1 {
-    padding: 60px 90px 60px;
+    padding: 100px 300px 100px;
     display: grid;
     place-content: center;
-    background-image: url(Imagens/arte1_3.jpeg);
+    background-image: url(Imagens/NoiteEstrelada.png);
     background-size: 103%;
 }
 
@@ -86,11 +86,16 @@
 
 .container {
     max-width: 1230px;
-    margin: 0 auto;
+    margin:  auto;
     display: grid;
     grid-template-areas: "main";
     width: 100%;
     height: 100vh;
+}
+
+.barra{
+    width: 100px;
+    height: 5px;
 }
 
 /*COLOR -
@@ -166,6 +171,11 @@
     align-items: center;
 }
 
+.lupa{
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (max-width: 856px) {
     .container {
         display: block;
@@ -181,13 +191,33 @@
         height: 100vh;
     }
 
+    .A2 .A3 {
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        color: rgb(242 168 29);
+        /*#F2A81D;3258A6*/
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    
+    .A2 .A3:hover {
+        background-color: #F2EEAC;
+    }
+
+    .barra{
+        width: 100px;
+        height: 5px;
+    }
+    
+
     .card-item {
         margin: 2em 2em;
         text-align: center;
         padding-left: 5px;
         background-color: #F2EEAC;
         width: 200px;
-        height: 180px;
+        height: 200px;
         border-color: rgb(242 168 29);
         border-width: 5px;
         border-style: solid;
@@ -223,12 +253,93 @@
         padding: 15px 60px 15px;
         display: grid;
         place-content: center;
-        background-image: url(Imagens/arte1_3.jpeg);
+        background-image: url(Imagens/NoiteEstrelada.png);
         background-size: 103%;
     }
 
-    .secundário {
-        margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+
+    .escolha1 {
+        padding: 38px 35px 38px;
+        display: grid;
+        place-content: center;
+        background-image: url(Imagens/NoiteEstrelada.png);
+        background-size: 105%;
+    }
+
+    .A2 .A3 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(242 168 29);
+        /*#F2A81D;3258A6*/
+        padding: 10px 15px;
+        text-decoration: none;
         text-align: center;
     }
+    
+    .A2 .A3:hover {
+        background-color: #F2EEAC;
+    }
+    
+
+    .task {
+        font-size: 30px;
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        background-image: var(--gradiente);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Bree Serif', serif;
+        color: transparent;
+    }
+
+    .A1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3258A6;
+        border-color: #020F59;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 2px;
+        font-size: 13px;
+    }
+
+    .barra{
+        width: 30px;
+        height: 2px;
+    }
+
+    .lupa{
+        width: 15px;
+        height: 15px;
+    }
+
+    .card-item {
+        margin-left: 50px;
+        text-align: center;
+        padding-left: 5px;
+        background-color: #F2EEAC;
+        width: 300px;
+        height: 200px;
+        border-color: rgb(242 168 29);
+        border-width: 15px;
+        border-style: solid;
+        border-radius: 15px;
+        display: inline-block;
+    }
+
+    .pa{
+        text-align: center;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'DM Serif Display', serif;
+        font-family: 'Itim', cursive;
+        font-family: 'Tinos', serif;
+        font-family: 'VT323', monospace;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+}
 }
