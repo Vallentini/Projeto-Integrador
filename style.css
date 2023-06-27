@@ -63,7 +63,7 @@
     color: rgb(242 168 29);
     /*#F2A81D;3258A6*/
     text-align: center;
-    padding: 14px 20px;
+    padding: 18px 20px;
     text-decoration: none;
 }
 
@@ -133,7 +133,6 @@
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
-    border-radius: 15px;
     display: inline-block;
 }
 
@@ -221,7 +220,6 @@
         border-color: rgb(242 168 29);
         border-width: 5px;
         border-style: solid;
-        border-radius: 5px;
         display: inline-block;
     }
 
@@ -328,7 +326,6 @@
         border-color: rgb(242 168 29);
         border-width: 15px;
         border-style: solid;
-        border-radius: 15px;
         display: inline-block;
     }
 
