@@ -86,14 +86,14 @@
 
 .container {
     max-width: 1230px;
-    margin:  auto;
+    margin: auto;
     display: grid;
     grid-template-areas: "main";
     width: 100%;
     height: 100vh;
 }
 
-.barra{
+.barra {
     width: 100px;
     height: 5px;
 }
@@ -127,12 +127,9 @@
 .card-item {
     text-align: center;
     padding-left: 5px;
-    background-color: #F2EEAC;
+    background-color: #628de4;
     width: 400px;
-    height: 300px;
-    border-color: rgb(242 168 29);
-    border-width: 15px;
-    border-style: solid;
+    height: 400px;
     display: inline-block;
 }
 
@@ -143,15 +140,16 @@
     font-family: 'Itim', cursive;
     font-family: 'Tinos', serif;
     font-family: 'VT323', monospace;
-    font-size: 23px;
+    font-size: 30px;
     color: rgb(0, 0, 0);
 }
 
 .A5 {
     text-align: center;
     font-size: 35px;
-    font-family: 'DM Serif Display', serif;
-    font-family: 'Ultra', serif;
+    font-family: 'Patua One', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Yeseva One', cursive; 
     color: rgb(242 168 29);
 }
 
@@ -170,15 +168,27 @@
     align-items: center;
 }
 
-.lupa{
+.lupa {
     width: 30px;
     height: 30px;
+}
+
+.A6 {
+    list-style-type: none;
+    padding: 0;
+    height: 50px;
+    overflow: hidden;
+    background-color: #3258A6;
+    border-color: #020F59;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 856px) {
     .container {
         display: block;
-        background-color: #3258A6;
+        background-color: #628de4;
 
     }
 
@@ -199,27 +209,23 @@
         padding: 14px 20px;
         text-decoration: none;
     }
-    
+
     .A2 .A3:hover {
         background-color: #F2EEAC;
     }
 
-    .barra{
-        width: 100px;
+    .barra {
         height: 5px;
     }
-    
+
 
     .card-item {
         margin: 2em 2em;
         text-align: center;
+        background-color: #628de4;
         padding-left: 5px;
-        background-color: #F2EEAC;
         width: 200px;
         height: 200px;
-        border-color: rgb(242 168 29);
-        border-width: 5px;
-        border-style: solid;
         display: inline-block;
     }
 
@@ -275,11 +281,11 @@
         text-decoration: none;
         text-align: center;
     }
-    
+
     .A2 .A3:hover {
         background-color: #F2EEAC;
     }
-    
+
 
     .task {
         font-size: 30px;
@@ -306,12 +312,12 @@
         font-size: 13px;
     }
 
-    .barra{
+    .barra {
         width: 30px;
         height: 2px;
     }
 
-    .lupa{
+    .lupa {
         width: 15px;
         height: 15px;
     }
@@ -320,16 +326,13 @@
         margin-left: 50px;
         text-align: center;
         padding-left: 5px;
-        background-color: #F2EEAC;
+        background-color: #628de4;
         width: 300px;
         height: 200px;
-        border-color: rgb(242 168 29);
-        border-width: 15px;
-        border-style: solid;
         display: inline-block;
     }
 
-    .pa{
+    .pa {
         text-align: center;
         font-family: 'Abril Fatface', cursive;
         font-family: 'DM Serif Display', serif;
@@ -338,5 +341,5 @@
         font-family: 'VT323', monospace;
         font-size: 20px;
         color: rgb(0, 0, 0);
-}
+    }
 }
