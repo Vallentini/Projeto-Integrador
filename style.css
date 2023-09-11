@@ -125,12 +125,10 @@
 }
 
 .card-item { 
-    padding-left: 5px;
-    background-color: #628de4;
     width: 400px;
     height: 400px;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .pa {
