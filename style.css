@@ -1,23 +1,67 @@
-/*.color1 { #4e031e };
-.color2 { #5d2d4e };
-.color3 { #5a4c6e };
-.color4 { #447390 };
-.color5 { #05a1ad };
+/*COLOR -
+ #F2A81D - LARANJA
+ #F2D852 - AMARELO
+ #3258A6 - AZUL
+ #F2EEAC - AMARELO
+ #021373 - AZUL*/
 
-.color1 { #ff0092 };
-.color2 { #ffca1b };
-.color3 { #b6ff00 };
-.color4 { #228dff };
-.color5 { #ba01ff };
-*/
+main.conteudo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
 
+.img {
+    width: 400px;
+    height: 400px;
+    padding-left: 0;
+    border-radius: 20px;
+}
+
+h1 {
+    padding-left: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+body {
+    background-color: #628de4;
+}
+
+/* @media screen and (max-width: 856px) {
+    main.conteudo {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      border-radius: 20px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    main.conteudo {
+      display: grid;
+      grid-template-columns: auto;
+    }
+
+    .img {
+      height: 200px;
+      width: 300px;
+      border-radius: 20px;
+    }
+  }
+  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.escolha1 {
+.banner {
     padding: 100px 300px 100px;
     display: grid;
     place-content: center;
@@ -37,11 +81,7 @@
     color: transparent;
 }
 
-/*.escolha2 {
-    border-bottom: 4px solid white;
-}*/
-
-.A1 {
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,35 +90,29 @@
     border-color: #020F59;
     border-width: 2px;
     border-style: solid;
-    border-radius: 5px;
+
 }
 
-.A2 {
+.nav-home {
     float: left;
 }
 
-.A2 .A3 {
-    font-family: Arial, Helvetica, sans-serif;
+.nav-home .nav-conteudo {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
     display: block;
     color: rgb(242 168 29);
-    /*#F2A81D;3258A6*/
     text-align: center;
-    padding: 18px 20px;
+    padding: 20px 25px;
     text-decoration: none;
+    transition: transform .2s;
 }
 
-.A2 .A3:hover {
+.nav-home .nav-conteudo:hover {
     background-color: #F2EEAC;
+    transform: scale(1.5);
+
 }
-
-
-/*:root {
-    --gradiente: linear-gradient(to right, rgb(255 0 146), rgb(186 10 255), rgb(34 125 255) );
-}*/
-
-/*:root {
-    --gradiente: linear-gradient(to right, rgb(255 0 146), rgb(255 202 27), rgb(182 255 0), rgb(34 141 255), rgb(186 1 255))
-} 78 3 30    5 161 173 */
 
 :root {
     --gradiente: linear-gradient(to right, rgb(242 168 29), rgb(248 218 69));
@@ -98,69 +132,24 @@
     height: 5px;
 }
 
-/*COLOR -
- #F2A81D - LARANJA
- #F2D852 - AMARELO
- #3258A6 - AZUL
- #F2EEAC - AMARELO
- #021373 - AZUL*/
-
-.A3:hover {
+.nav-conteudo:hover {
     color: black;
     transition: 0.8s;
 }
 
-.A4 {
-    font-size: 40px;
-    font-family: 'DM Serif Display', serif;
-    color: #3258A6;
-}
-
-/*rgb(255, 242, 56);*/
-
-.A4A5 {
-    font-size: 20px;
-    color: #3258A6;
-
-}
-
-.card-item { 
+.card-item {
     width: 400px;
     height: 400px;
     display: inline-block;
     border-radius: 10px;
 }
 
-.pa {
-    text-align: center;
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'DM Serif Display', serif;
-    font-family: 'Itim', cursive;
-    font-family: 'Tinos', serif;
-    font-family: 'VT323', monospace;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-}
-
-.A5 {
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Patua One', cursive;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Yeseva One', cursive; 
-    color: rgb(242 168 29);
-}
-
-/*#072bf5;*/
-
-
-
 .containerVan {
     max-width: 1230px;
     display: grid;
     grid-template-areas: "main";
+    margin-top: 20px;
     width: 100%;
-    height: 100vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -175,169 +164,161 @@
     list-style-type: none;
     padding: 0;
     height: 50px;
+    margin-top: 10px;
     overflow: hidden;
     background-color: #3258A6;
     border-color: #020F59;
     border-width: 2px;
     border-style: solid;
-    border-radius: 5px;
-}
 
-@media screen and (max-width: 856px) {
-    .container {
-        display: block;
-        background-color: #628de4;
+
+    @media screen and (max-width: 856px) {
+        .container {
+            display: block;
+            background-color: #628de4;
+
+        }
+
+        .containerVan {
+            max-width: 856px;
+            display: grid;
+            grid-template-areas: "main";
+            width: 100%;
+            height: 100vh;
+        }
+
+        .A2 .A3 {
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            color: rgb(242 168 29);
+            /*#F2A81D;3258A6*/
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .A2 .A3:hover {
+            background-color: #F2EEAC;
+        }
+
+        .barra {
+            height: 5px;
+        }
+
+
+        .card-item {
+            margin: 2em 2em;
+            text-align: center;
+            background-color: #628de4;
+            padding-left: 5px;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        .pa {
+            text-align: center;
+            font-family: 'Abril Fatface', cursive;
+            font-family: 'DM Serif Display', serif;
+            font-family: 'Itim', cursive;
+            font-family: 'Tinos', serif;
+            font-family: 'VT323', monospace;
+            font-size: 13px;
+            color: rgb(0, 0, 0);
+        }
+
+        .A5 {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'DM Serif Display', serif;
+            font-family: 'Ultra', serif;
+            color: rgb(242 168 29);
+        }
+
+        main.conteudo {
+            display: inline-block;
+            grid-template-columns: auto auto;
+        }
+
+        .escolha1 {
+            padding: 15px 60px 15px;
+            display: grid;
+            place-content: center;
+            background-image: url(Imagens/NoiteEstrelada.png);
+            background-size: 103%;
+        }
 
     }
 
-    .containerVan {
-        max-width: 856px;
-        display: grid;
-        grid-template-areas: "main";
-        width: 100%;
-        height: 100vh;
-    }
+    @media screen and (max-width: 400px) {
 
-    .A2 .A3 {
-        font-family: Arial, Helvetica, sans-serif;
-        display: block;
-        color: rgb(242 168 29);
-        /*#F2A81D;3258A6*/
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
+        .escolha1 {
+            padding: 38px 35px 38px;
+            display: grid;
+            place-content: center;
+            background-image: url(Imagens/NoiteEstrelada.png);
+            background-size: 105%;
+        }
 
-    .A2 .A3:hover {
-        background-color: #F2EEAC;
-    }
+        .A2 .A3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(242 168 29);
+            /*#F2A81D;3258A6*/
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+        }
 
-    .barra {
-        height: 5px;
-    }
+        .A2 .A3:hover {
+            background-color: #F2EEAC;
+        }
 
 
-    .card-item {
-        margin: 2em 2em;
-        text-align: center;
-        background-color: #628de4;
-        padding-left: 5px;
-        width: 200px;
-        height: 200px;
-        display: inline-block;
-    }
+        .task {
+            font-size: 30px;
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            background-image: var(--gradiente);
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-family: 'Bree Serif', serif;
+            color: transparent;
+        }
 
-    .pa {
-        text-align: center;
-        font-family: 'Abril Fatface', cursive;
-        font-family: 'DM Serif Display', serif;
-        font-family: 'Itim', cursive;
-        font-family: 'Tinos', serif;
-        font-family: 'VT323', monospace;
-        font-size: 13px;
-        color: rgb(0, 0, 0);
-    }
+        .A1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #3258A6;
+            border-color: #020F59;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 2px;
+            font-size: 13px;
+        }
 
-    .A5 {
-        text-align: center;
-        font-size: 18px;
-        font-family: 'DM Serif Display', serif;
-        font-family: 'Ultra', serif;
-        color: rgb(242 168 29);
-    }
+        .barra {
+            width: 30px;
+            height: 2px;
+        }
 
-    main.conteudo {
-        display: inline-block;
-        grid-template-columns: auto auto;
-    }
+        .lupa {
+            width: 15px;
+            height: 15px;
+        }
 
-    .escolha1 {
-        padding: 15px 60px 15px;
-        display: grid;
-        place-content: center;
-        background-image: url(Imagens/NoiteEstrelada.png);
-        background-size: 103%;
-    }
-
-}
-
-@media screen and (max-width: 400px) {
-
-    .escolha1 {
-        padding: 38px 35px 38px;
-        display: grid;
-        place-content: center;
-        background-image: url(Imagens/NoiteEstrelada.png);
-        background-size: 105%;
-    }
-
-    .A2 .A3 {
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(242 168 29);
-        /*#F2A81D;3258A6*/
-        padding: 10px 15px;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .A2 .A3:hover {
-        background-color: #F2EEAC;
-    }
+        .card-item {
+            margin-left: 50px;
+            text-align: center;
+            padding-left: 5px;
+            background-color: #628de4;
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+        }
 
 
-    .task {
-        font-size: 30px;
-        width: 100%;
-        padding: 10px 0;
-        display: flex;
-        background-image: var(--gradiente);
-        background-clip: text;
-        -webkit-background-clip: text;
-        font-family: 'Bree Serif', serif;
-        color: transparent;
-    }
-
-    .A1 {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #3258A6;
-        border-color: #020F59;
-        border-width: 1px;
-        border-style: solid;
-        border-radius: 2px;
-        font-size: 13px;
-    }
-
-    .barra {
-        width: 30px;
-        height: 2px;
-    }
-
-    .lupa {
-        width: 15px;
-        height: 15px;
-    }
-
-    .card-item {
-        margin-left: 50px;
-        text-align: center;
-        padding-left: 5px;
-        background-color: #628de4;
-        width: 300px;
-        height: 200px;
-        display: inline-block;
-    }
-
-    .pa {
-        text-align: center;
-        font-family: 'Abril Fatface', cursive;
-        font-family: 'DM Serif Display', serif;
-        font-family: 'Itim', cursive;
-        font-family: 'Tinos', serif;
-        font-family: 'VT323', monospace;
-        font-size: 20px;
-        color: rgb(0, 0, 0);
     }
 }
