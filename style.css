@@ -57,7 +57,6 @@ body {
   */
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -138,6 +137,7 @@ body {
 }
 
 .card-item {
+    margin-top: 10px;
     width: 400px;
     height: 400px;
     display: inline-block;
