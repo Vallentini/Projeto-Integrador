@@ -12,9 +12,11 @@ main.conteudo {
 
 .img {
     width: 400px;
-    height: 400px;
+    height: 355px;
     padding-left: 0;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+
 }
 
 h1 {
@@ -142,7 +144,12 @@ body {
     width: 400px;
     height: 400px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+.card-item:hover{
+    transform: scale(1.1);
+
 }
 
 .containerVan {
@@ -154,11 +161,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.lupa {
-    width: 30px;
-    height: 30px;
 }
 
 .footer {
