@@ -18,10 +18,11 @@ main.conteudo {
 }
 
 h1 {
-    padding-left: 0;
     color: #000;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
+    font-family: 'ADLaM Display', cursive;
+
 
 }
 
@@ -69,7 +70,7 @@ body {
 }
 
 .task {
-    font-size: 65px;
+    font-size: 70px;
     width: 105%;
     padding: 20px 0;
     display: flex;
@@ -98,7 +99,7 @@ body {
 
 .nav-home .nav-conteudo {
     font-family: 'Bree Serif', serif;
-    font-size: 20px;
+    font-size: 25px;
     display: block;
     color: rgb(242 168 29);
     text-align: center;
@@ -109,7 +110,7 @@ body {
 
 .nav-home .nav-conteudo:hover {
     background-color: #F2EEAC;
-    transform: scale(1.5);
+    transform: scale(1.1);
 
 }
 
@@ -164,7 +165,7 @@ body {
     list-style-type: none;
     padding: 0;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
     overflow: hidden;
     background-color: #3258A6;
     border-color: #020F59;
@@ -191,7 +192,6 @@ body {
             font-family: Arial, Helvetica, sans-serif;
             display: block;
             color: rgb(242 168 29);
-            /*#F2A81D;3258A6*/
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
