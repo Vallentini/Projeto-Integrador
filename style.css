@@ -147,6 +147,96 @@ body {
     border-radius: 5px;
     transition: transform .2s;
 }
+
+.cardItemCubismo {
+    font-size: 20px;
+    margin-left: 450px;
+    background-color: #ffffff;
+    width: 1000px;
+    height: 100%;
+    border-color: rgb(242 168 29);
+    border-width: 15px;
+    border-style: solid;
+    display: inline-block;
+    padding: 20px 35px;
+    margin-top: 20px;
+  }
+
+  .cardItemExpressionismo {
+    font-size: 20px;
+    margin-left: 600px;
+    background-color: #ffffff;
+    width: 1000px;
+    height: 3500px;
+    border-color: rgb(242 168 29);
+    border-width: 15px;
+    border-style: solid;
+    display: inline-block;
+    padding: 20px 35px;
+  }
+
+  .cardItemFuturismo {
+    font-size: 20px;
+    margin-left: 600px;
+    background-color: #ffffff;
+    width: 1000px;
+    height: 100%;
+    border-color: rgb(242 168 29);
+    border-width: 15px;
+    border-style: solid;
+    display: inline-block;
+    padding: 20px 35px;
+}
+
+.cardItemSurrealismo {
+    font-size: 20px;
+    margin-left: 450px;
+    background-color: #ffffff;
+    width: 1000px;
+    height: 100%;
+    border-color: rgb(242 168 29);
+    border-width: 15px;
+    border-style: solid;
+    display: inline-block;
+    padding: 20px 35px;
+    margin-top: 20px;
+  }
+
+  .cardItemVanguardas {
+    font-size: 20px;
+    margin-left: 450px;
+    background-color: #ffffff;
+    width: 1000px;
+    height: 100%;
+    border-color: rgb(242 168 29);
+    border-width: 15px;
+    border-style: solid;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px 35px;
+}
+
+
+  .tituloSurrealismo {
+    padding-left: 0;
+    margin-top: 2px;
+
+  }
+  .imgSurrealismo {
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 8px;
+  }
+
+
+  .imgCubismo {
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 8px;
+  }
+
 .card-item:hover{
     transform: scale(1.1);
 
