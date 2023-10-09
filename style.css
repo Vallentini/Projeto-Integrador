@@ -1,3 +1,66 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
 /*COLOR -
  #F2A81D - LARANJA
  #F2D852 - AMARELO
@@ -19,7 +82,9 @@
     height: 355px;
     padding-left: 0;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
+    padding-right: 20px;
+    
 
 }
 
@@ -87,7 +152,7 @@ body {
     color: transparent;
 }
 
-.nav {
+nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -137,6 +202,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-left: 170px;
 }
 .nav-conteudo:hover {
     color: black;
@@ -149,6 +215,8 @@ body {
     height: 400px;
     border-radius: 5px;
     transition: transform .2s;
+    padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 .cardItemCubismo {
@@ -156,7 +224,6 @@ body {
     margin-left: 150px;
     background-color: #ffffff;
     width: 1000px;
-    height: 100%;
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
@@ -166,11 +233,11 @@ body {
   }
 
   .cardItemExpressionismo {
+    margin-top: 8px;
     font-size: 20px;
     margin-left: 150px;
     background-color: #ffffff;
     width: 1000px;
-    height: 3500px;
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
@@ -183,7 +250,6 @@ body {
     margin-left: 150px;
     background-color: #ffffff;
     width: 1000px;
-    height: 100%;
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
@@ -197,7 +263,6 @@ body {
     margin-left: 150px;
     background-color: #ffffff;
     width: 1000px;
-    height: 100%;
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
@@ -211,7 +276,6 @@ body {
     margin-left: 150px;
     background-color: #ffffff;
     width: 1000px;
-    height: 100%;
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
@@ -225,7 +289,6 @@ body {
     margin-left: 15%;
     background-color: #ffffff;
     width: 1000px;
-    height: 100%;
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
@@ -255,6 +318,13 @@ body {
     padding-left: 250px;
   }
 
+  .imgExpressionismo{
+    width: 500px;
+    height: 300px;
+    margin-top: 10px;
+    margin-top: 10px;
+    padding-left: 250px;
+  }
 
   .imgCubismo {
     width: 400px;
