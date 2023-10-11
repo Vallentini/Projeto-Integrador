@@ -210,7 +210,7 @@ nav {
 }
 
 .card-item {
-    margin-top: 10px;
+    margin-top: 8px;
     width: 400px;
     height: 400px;
     border-radius: 5px;
@@ -229,7 +229,7 @@ nav {
     border-style: solid;
     display: inline-block;
     padding: 20px 35px;
-    margin-top: 20px;
+    margin-top: 8px;
   }
 
   .cardItemExpressionismo {
@@ -256,6 +256,7 @@ nav {
     display: inline-block;
     padding: 20px 35px;
     padding-top: 10px;
+    margin-top: 8px;
 }
 
 .cardItemSurrealismo {
@@ -268,7 +269,7 @@ nav {
     border-style: solid;
     display: inline-block;
     padding: 20px 35px;
-    margin-top: 20px;
+    margin-top: 8px;
   }
 
   .cardItemVanguardas {
@@ -280,7 +281,7 @@ nav {
     border-width: 15px;
     border-style: solid;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 20px 35px;
 }
 
@@ -294,7 +295,7 @@ nav {
     border-style: solid;
     display: inline-block;
     padding: 20px 35px;
-    margin-top: 20px;
+    margin-top: 8px;
   }
 
   .imgSambaqui {
