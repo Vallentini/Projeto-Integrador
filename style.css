@@ -58,16 +58,7 @@ table {
 }
 
  
-.img {
-    width: 400px;
-    height: 355px;
-    padding-left: 0;
-    border-radius: 10px;
-    margin-top: 50px;
-    padding-right: 20px;
-    
 
-}
 
 body {
     background-color: #628de4;
@@ -78,6 +69,39 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3258A6;
+    border-color: #020F59;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+.nav-home {
+    float: left;
+}
+
+.nav-home .nav-conteudo {
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+    display: block;
+    color: rgb(242 168 29);
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+.nav-home .nav-conteudo:hover {
+    background-color: #F2EEAC;
+    transform: scale(1.1);
+
+}
+
 
 .banner {
     padding: 100px 300px 100px;
@@ -115,37 +139,14 @@ h3 {
     color: #000;
     padding-bottom: 12px;
 }
-
-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #3258A6;
-    border-color: #020F59;
-    border-width: 2px;
-    border-style: solid;
-
-}
-
-.nav-home {
-    float: left;
-}
-
-.nav-home .nav-conteudo {
-    font-family: 'Bree Serif', serif;
-    font-size: 25px;
-    display: block;
-    color: rgb(242 168 29);
-    text-align: center;
-    padding: 20px 25px;
-    text-decoration: none;
-    transition: transform .2s;
-}
-
-.nav-home .nav-conteudo:hover {
-    background-color: #F2EEAC;
-    transform: scale(1.1);
+.img {
+    width: 400px;
+    height: 355px;
+    padding-left: 0;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-right: 20px;
+    
 
 }
 
@@ -344,16 +345,7 @@ ul{
 
 }
 @media (max-width: 1680px) {
-    .img {
-        width: 400px;
-        height: 355px;
-        padding-left: 0;
-        border-radius: 10px;
-        margin-top: 50px;
-        padding-right: 20px;
-        
-    
-    }
+   
    
     
 }
@@ -362,32 +354,13 @@ ul{
     
   
   @media (max-width: 980px) {
-    .img {
-        width: 400px;
-        height: 355px;
-        padding-left: 0;
-        border-radius: 10px;
-        margin-top: 50px;
-        padding-right: 20px;
-        
     
-    }
    
     }
     
   
   
   @media (max-width: 736px) {
-    .img {
-        width: 400px;
-        height: 355px;
-        padding-left: 0;
-        border-radius: 10px;
-        margin-top: 50px;
-        padding-right: 20px;
-        
-    
-    }
    
     
     
