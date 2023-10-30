@@ -49,7 +49,7 @@ table {
 
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
@@ -60,6 +60,21 @@ table {
 
 body {
     background-color: #628de4;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 3% 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "h h"
+        "m m"
+        "f f";
+}
+
+
+main {
+    grid-area: m;
+    display: inline;
+
 }
 
 nav {
@@ -73,15 +88,105 @@ nav {
     border-style: solid;
 
 }
+header {
+    grid-area: h;
+    background-color: var(--cor-fundo3);
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    background-color: var(--cor-verde);
+    color: var(--cor-amarela);
+    display: inline;
+}
 
+.topnav {
+    overflow: hidden;
+    background-color: var(--cor-verdeEscuro);
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+.topnav #links-menu {
+    display: none;
+}
+
+header h1 {
+    color: rgb(242 168 29);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    font-family: 'Bree Serif', serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #3258A6;
+    position: relative;
+    box-shadow: #2E7366 20;
+    font-family: 'Titan One', sans-serif;
+}
+
+.topnav #links-menu {
+    display: none;
+}
+
+.tudo-menu h1 {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+
+.topnav a {
+    color: rgb(242 168 29);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.4s;
+    font-family: 'Bree Serif', serif;
+
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.topnav a.icon {
+    background: #3258A6;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.topnav a.icon :hover {
+    background-color: #ddd;
+    color: #ddd;
+    transition: 0.4s;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #3258A6;
+}
+
+/*
 .nav-home {
     float: left;
 }
 
 .nav-home .nav-conteudo {
     font-family: 'Bree Serif', serif;
-    font-size: 25px;
-    display: block;
+    font-size: 10%;
+    display: flex;
     color: rgb(242 168 29);
     text-align: center;
     padding: 20px 25px;
@@ -94,19 +199,19 @@ nav {
     transform: scale(1.1);
 
 }
-
+*/
 
 .banner {
     padding: 100px 300px 100px;
-    display: grid;
+    display: flex;
     place-content: center;
     background-image: url(Imagens/NoiteEstrelada.png);
-    background-size: 103%;
+    background-size: 100%;
 }
 
-h1 {
-    font-size: 70px;
-    width: 105%;
+.banner h1 {
+    font-size: 50px;
+    width: 100%;
     padding: 20px 0;
     display: flex;
     background-image: var(--gradiente);
@@ -124,6 +229,7 @@ h2 {
 
 
 }
+
 h3 {
     text-align: center;
     font-size: 25px;
@@ -132,6 +238,7 @@ h3 {
     color: #000;
     padding-bottom: 12px;
 }
+
 .img {
     width: 400px;
     height: 355px;
@@ -139,7 +246,7 @@ h3 {
     border-radius: 10px;
     margin-top: 50px;
     padding-right: 20px;
-    
+
 
 }
 
@@ -155,13 +262,14 @@ h3 {
     width: 100%;
 }
 
-.containerIndex{
+.containerIndex {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-left: 170px;
 }
+
 .nav-conteudo:hover {
     color: black;
     transition: 0.8s;
@@ -169,72 +277,20 @@ h3 {
 
 .card-item {
     margin-top: 8px;
-    width: 400px;
-    height: 400px;
+    width: 70%;
+    height: 70%;
     border-radius: 5px;
     transition: transform .2s;
-    padding-right: 20px;
+    padding-right: 20%;
     padding-bottom: 50px;
 }
 
-.cardItemCubismo {
-    font-size: 20px;
-    margin-left: 150px;
-    background-color: #ffffff;
-    width: 1000px;
-    border-color: rgb(242 168 29);
-    border-width: 15px;
-    border-style: solid;
-    display: inline-block;
-    padding: 20px 35px;
-    margin-top: 8px;
-  }
 
-  .cardItemExpressionismo {
-    margin-top: 8px;
+.cardItemText {
     font-size: 20px;
-    margin-left: 150px;
+    margin-left: 10%;
     background-color: #ffffff;
-    width: 1000px;
-    border-color: rgb(242 168 29);
-    border-width: 15px;
-    border-style: solid;
-    display: inline-block;
-    padding: 20px 35px;
-  }
-
-  .cardItemFuturismo {
-    font-size: 20px;
-    margin-left: 150px;
-    background-color: #ffffff;
-    width: 1000px;
-    border-color: rgb(242 168 29);
-    border-width: 15px;
-    border-style: solid;
-    display: inline-block;
-    padding: 20px 35px;
-    padding-top: 10px;
-    margin-top: 8px;
-}
-
-.cardItemSurrealismo {
-    font-size: 20px;
-    margin-left: 150px;
-    background-color: #ffffff;
-    width: 1000px;
-    border-color: rgb(242 168 29);
-    border-width: 15px;
-    border-style: solid;
-    display: inline-block;
-    padding: 20px 35px;
-    margin-top: 8px;
-  }
-
-  .cardItemVanguardas {
-    font-size: 20px;
-    margin-left: 150px;
-    background-color: #ffffff;
-    width: 1000px;
+    width: 80%;
     border-color: rgb(242 168 29);
     border-width: 15px;
     border-style: solid;
@@ -243,20 +299,7 @@ h3 {
     padding: 20px 35px;
 }
 
-.cardItemSambaqui {
-    font-size: 20px;
-    margin-left: 15%;
-    background-color: #ffffff;
-    width: 1000px;
-    border-color: rgb(242 168 29);
-    border-width: 15px;
-    border-style: solid;
-    display: inline-block;
-    padding: 20px 35px;
-    margin-top: 8px;
-  }
-
-  .imgSambaqui {
+.imgSambaqui {
     width: 400px;
     height: 300px;
     margin-left: 200px;
@@ -267,48 +310,50 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
+}
 
 
-  .tituloSurrealismo {
+.tituloSurrealismo {
     padding-left: 0;
     margin-top: 2px;
 
-  }
-  .imgSurrealismo {
+}
+
+.imgSurrealismo {
     width: 500px;
     height: 300px;
     margin-top: 8px;
     margin-top: 8px;
     padding-left: 250px;
-  }
+}
 
-  .imgExpressionismo{
+.imgExpressionismo {
     width: 500px;
     height: 300px;
     margin-top: 10px;
     margin-top: 10px;
     padding-left: 250px;
-  }
+}
 
-  .imgCubismo {
+.imgCubismo {
     width: 400px;
     height: 300px;
     margin-left: 200px;
     margin-top: 8px;
-  }
+}
 
-.card-item:hover{
-    transform: scale(1.1);
+.card-item:hover {
+    transform: scale(1.03);
 
 }
 
-.conteudoDentro{
+.conteudoDentro {
     text-indent: 2cm;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-ul{
+
+ul {
     padding-left: 2cm;
 }
 
@@ -337,8 +382,9 @@ ul{
     margin-top: 20px;
 
 }
+
 @media (max-width: 1680px) {
-    *{
+    * {
         margin: 0;
         padding: 0;
         border: none;
@@ -346,6 +392,7 @@ ul{
         text-decoration: none;
         box-sizing: border-box;
     }
+
     nav {
         list-style-type: none;
         margin: 0;
@@ -355,13 +402,13 @@ ul{
         border-color: #020F59;
         border-width: 2px;
         border-style: solid;
-    
+
     }
-    
+
     .nav-home {
         float: left;
     }
-    
+
     .nav-home .nav-conteudo {
         font-family: 'Bree Serif', serif;
         font-size: 25px;
@@ -372,14 +419,14 @@ ul{
         text-decoration: none;
         transition: transform .2s;
     }
-    
+
     .nav-home .nav-conteudo:hover {
         background-color: #F2EEAC;
         transform: scale(1.1);
-    
+
     }
-    
-    
+
+
     .banner {
         padding: 100px 300px 100px;
         display: grid;
@@ -387,7 +434,7 @@ ul{
         background-image: url(Imagens/NoiteEstrelada.png);
         background-size: 103%;
     }
-    
+
     h1 {
         font-size: 70px;
         width: 105%;
@@ -399,15 +446,16 @@ ul{
         font-family: 'Bree Serif', serif;
         color: transparent;
     }
-    
+
     h2 {
         color: #000;
         font-size: 30px;
         text-align: center;
         font-family: 'ADLaM Display', cursive;
-    
-    
+
+
     }
+
     h3 {
         text-align: center;
         font-size: 25px;
@@ -416,6 +464,7 @@ ul{
         color: #000;
         padding-bottom: 12px;
     }
+
     .img {
         width: 400px;
         height: 355px;
@@ -423,14 +472,14 @@ ul{
         border-radius: 10px;
         margin-top: 50px;
         padding-right: 20px;
-        
-    
+
+
     }
-    
+
     :root {
         --gradiente: linear-gradient(to right, rgb(242 168 29), rgb(248 218 69));
     }
-    
+
     .container {
         max-width: 1230px;
         margin: auto;
@@ -438,19 +487,20 @@ ul{
         grid-template-areas: "main";
         width: 100%;
     }
-    
-    .containerIndex{
+
+    .containerIndex {
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         padding-left: 170px;
     }
+
     .nav-conteudo:hover {
         color: black;
         transition: 0.8s;
     }
-    
+
     .card-item {
         margin-top: 8px;
         width: 400px;
@@ -460,7 +510,7 @@ ul{
         padding-right: 20px;
         padding-bottom: 50px;
     }
-    
+
     .cardItemCubismo {
         font-size: 20px;
         margin-left: 150px;
@@ -472,9 +522,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .cardItemExpressionismo {
+    }
+
+    .cardItemExpressionismo {
         margin-top: 8px;
         font-size: 20px;
         margin-left: 150px;
@@ -485,9 +535,9 @@ ul{
         border-style: solid;
         display: inline-block;
         padding: 20px 35px;
-      }
-    
-      .cardItemFuturismo {
+    }
+
+    .cardItemFuturismo {
         font-size: 20px;
         margin-left: 150px;
         background-color: #ffffff;
@@ -500,7 +550,7 @@ ul{
         padding-top: 10px;
         margin-top: 8px;
     }
-    
+
     .cardItemSurrealismo {
         font-size: 20px;
         margin-left: 150px;
@@ -512,9 +562,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .cardItemVanguardas {
+    }
+
+    .cardItemVanguardas {
         font-size: 20px;
         margin-left: 150px;
         background-color: #ffffff;
@@ -526,7 +576,7 @@ ul{
         margin-top: 8px;
         padding: 20px 35px;
     }
-    
+
     .cardItemSambaqui {
         font-size: 20px;
         margin-left: 15%;
@@ -538,9 +588,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .imgSambaqui {
+    }
+
+    .imgSambaqui {
         width: 400px;
         height: 300px;
         margin-left: 200px;
@@ -551,45 +601,46 @@ ul{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-      }
-    
-      .imgSurrealismo {
+    }
+
+    .imgSurrealismo {
         width: 500px;
         height: 300px;
         margin-top: 8px;
         margin-top: 8px;
         padding-left: 250px;
-      }
-    
-      .imgExpressionismo{
+    }
+
+    .imgExpressionismo {
         width: 500px;
         height: 300px;
         margin-top: 10px;
         margin-top: 10px;
         padding-left: 250px;
-      }
-    
-      .imgCubismo {
+    }
+
+    .imgCubismo {
         width: 400px;
         height: 300px;
         margin-left: 200px;
         margin-top: 8px;
-      }
-    
-    .card-item:hover{
-        transform: scale(1.1);
-    
     }
-    
-    .conteudoDentro{
+
+    .card-item:hover {
+        transform: scale(1.1);
+
+    }
+
+    .conteudoDentro {
         text-indent: 2cm;
         padding-bottom: 10px;
         padding-top: 10px;
     }
-    ul{
+
+    ul {
         padding-left: 2cm;
     }
-    
+
     .containerVan {
         max-width: 1230px;
         display: grid;
@@ -600,7 +651,7 @@ ul{
         justify-content: center;
         align-items: center;
     }
-    
+
     .footer {
         margin-top: 10px;
         left: 0;
@@ -613,15 +664,15 @@ ul{
         border-width: 2px;
         border-style: solid;
         margin-top: 20px;
-    
+
     }
 }
 
 
-    
-  
-  @media (max-width: 980px) {
-    *{
+
+
+@media (max-width: 980px) {
+    * {
         margin: 0;
         padding: 0;
         border: none;
@@ -629,6 +680,7 @@ ul{
         text-decoration: none;
         box-sizing: border-box;
     }
+
     nav {
         list-style-type: none;
         margin: 0;
@@ -638,13 +690,13 @@ ul{
         border-color: #020F59;
         border-width: 2px;
         border-style: solid;
-    
+
     }
-    
+
     .nav-home {
         float: left;
     }
-    
+
     .nav-home .nav-conteudo {
         font-family: 'Bree Serif', serif;
         font-size: 25px;
@@ -655,14 +707,14 @@ ul{
         text-decoration: none;
         transition: transform .2s;
     }
-    
+
     .nav-home .nav-conteudo:hover {
         background-color: #F2EEAC;
         transform: scale(1.1);
-    
+
     }
-    
-    
+
+
     .banner {
         padding: 100px 300px 100px;
         display: grid;
@@ -670,7 +722,7 @@ ul{
         background-image: url(Imagens/NoiteEstrelada.png);
         background-size: 103%;
     }
-    
+
     h1 {
         font-size: 70px;
         width: 105%;
@@ -682,15 +734,16 @@ ul{
         font-family: 'Bree Serif', serif;
         color: transparent;
     }
-    
+
     h2 {
         color: #000;
         font-size: 30px;
         text-align: center;
         font-family: 'ADLaM Display', cursive;
-    
-    
+
+
     }
+
     h3 {
         text-align: center;
         font-size: 25px;
@@ -699,6 +752,7 @@ ul{
         color: #000;
         padding-bottom: 12px;
     }
+
     .img {
         width: 400px;
         height: 355px;
@@ -706,14 +760,14 @@ ul{
         border-radius: 10px;
         margin-top: 50px;
         padding-right: 20px;
-        
-    
+
+
     }
-    
+
     :root {
         --gradiente: linear-gradient(to right, rgb(242 168 29), rgb(248 218 69));
     }
-    
+
     .container {
         max-width: 1230px;
         margin: auto;
@@ -721,19 +775,20 @@ ul{
         grid-template-areas: "main";
         width: 100%;
     }
-    
-    .containerIndex{
+
+    .containerIndex {
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         padding-left: 170px;
     }
+
     .nav-conteudo:hover {
         color: black;
         transition: 0.8s;
     }
-    
+
     .card-item {
         margin-top: 8px;
         width: 400px;
@@ -743,7 +798,7 @@ ul{
         padding-right: 20px;
         padding-bottom: 50px;
     }
-    
+
     .cardItemCubismo {
         font-size: 20px;
         margin-left: 150px;
@@ -755,9 +810,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .cardItemExpressionismo {
+    }
+
+    .cardItemExpressionismo {
         margin-top: 8px;
         font-size: 20px;
         margin-left: 150px;
@@ -768,9 +823,9 @@ ul{
         border-style: solid;
         display: inline-block;
         padding: 20px 35px;
-      }
-    
-      .cardItemFuturismo {
+    }
+
+    .cardItemFuturismo {
         font-size: 20px;
         margin-left: 150px;
         background-color: #ffffff;
@@ -783,7 +838,7 @@ ul{
         padding-top: 10px;
         margin-top: 8px;
     }
-    
+
     .cardItemSurrealismo {
         font-size: 20px;
         margin-left: 150px;
@@ -795,9 +850,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .cardItemVanguardas {
+    }
+
+    .cardItemVanguardas {
         font-size: 20px;
         margin-left: 150px;
         background-color: #ffffff;
@@ -809,7 +864,7 @@ ul{
         margin-top: 8px;
         padding: 20px 35px;
     }
-    
+
     .cardItemSambaqui {
         font-size: 20px;
         margin-left: 15%;
@@ -821,9 +876,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .imgSambaqui {
+    }
+
+    .imgSambaqui {
         width: 400px;
         height: 300px;
         margin-left: 200px;
@@ -834,44 +889,46 @@ ul{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-      }
-      .imgSurrealismo {
+    }
+
+    .imgSurrealismo {
         width: 500px;
         height: 300px;
         margin-top: 8px;
         margin-top: 8px;
         padding-left: 250px;
-      }
-    
-      .imgExpressionismo{
+    }
+
+    .imgExpressionismo {
         width: 500px;
         height: 300px;
         margin-top: 10px;
         margin-top: 10px;
         padding-left: 250px;
-      }
-    
-      .imgCubismo {
+    }
+
+    .imgCubismo {
         width: 400px;
         height: 300px;
         margin-left: 200px;
         margin-top: 8px;
-      }
-    
-    .card-item:hover{
-        transform: scale(1.1);
-    
     }
-    
-    .conteudoDentro{
+
+    .card-item:hover {
+        transform: scale(1.1);
+
+    }
+
+    .conteudoDentro {
         text-indent: 2cm;
         padding-bottom: 10px;
         padding-top: 10px;
     }
-    ul{
+
+    ul {
         padding-left: 2cm;
     }
-    
+
     .containerVan {
         max-width: 1230px;
         display: grid;
@@ -882,7 +939,7 @@ ul{
         justify-content: center;
         align-items: center;
     }
-    
+
     .footer {
         margin-top: 10px;
         left: 0;
@@ -895,15 +952,15 @@ ul{
         border-width: 2px;
         border-style: solid;
         margin-top: 20px;
-    
+
     }
-    
-    }
-    
-  
-  
-  @media (max-width: 736px) {
-    *{
+
+}
+
+
+
+@media (max-width: 736px) {
+    * {
         margin: 0;
         padding: 0;
         border: none;
@@ -911,6 +968,7 @@ ul{
         text-decoration: none;
         box-sizing: border-box;
     }
+
     nav {
         list-style-type: none;
         margin: 0;
@@ -920,13 +978,13 @@ ul{
         border-color: #020F59;
         border-width: 2px;
         border-style: solid;
-    
+
     }
-    
+
     .nav-home {
         float: left;
     }
-    
+
     .nav-home .nav-conteudo {
         font-family: 'Bree Serif', serif;
         font-size: 25px;
@@ -937,14 +995,14 @@ ul{
         text-decoration: none;
         transition: transform .2s;
     }
-    
+
     .nav-home .nav-conteudo:hover {
         background-color: #F2EEAC;
         transform: scale(1.1);
-    
+
     }
-    
-    
+
+
     .banner {
         padding: 100px 300px 100px;
         display: grid;
@@ -952,7 +1010,7 @@ ul{
         background-image: url(Imagens/NoiteEstrelada.png);
         background-size: 103%;
     }
-    
+
     h1 {
         font-size: 70px;
         width: 105%;
@@ -964,15 +1022,16 @@ ul{
         font-family: 'Bree Serif', serif;
         color: transparent;
     }
-    
+
     h2 {
         color: #000;
         font-size: 30px;
         text-align: center;
         font-family: 'ADLaM Display', cursive;
-    
-    
+
+
     }
+
     h3 {
         text-align: center;
         font-size: 25px;
@@ -981,6 +1040,7 @@ ul{
         color: #000;
         padding-bottom: 12px;
     }
+
     .img {
         width: 400px;
         height: 355px;
@@ -988,14 +1048,14 @@ ul{
         border-radius: 10px;
         margin-top: 50px;
         padding-right: 20px;
-        
-    
+
+
     }
-    
+
     :root {
         --gradiente: linear-gradient(to right, rgb(242 168 29), rgb(248 218 69));
     }
-    
+
     .container {
         max-width: 1230px;
         margin: auto;
@@ -1003,19 +1063,20 @@ ul{
         grid-template-areas: "main";
         width: 100%;
     }
-    
-    .containerIndex{
+
+    .containerIndex {
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         padding-left: 170px;
     }
+
     .nav-conteudo:hover {
         color: black;
         transition: 0.8s;
     }
-    
+
     .card-item {
         margin-top: 8px;
         width: 400px;
@@ -1025,7 +1086,7 @@ ul{
         padding-right: 20px;
         padding-bottom: 50px;
     }
-    
+
     .cardItemCubismo {
         font-size: 20px;
         margin-left: 150px;
@@ -1037,9 +1098,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .cardItemExpressionismo {
+    }
+
+    .cardItemExpressionismo {
         margin-top: 8px;
         font-size: 20px;
         margin-left: 150px;
@@ -1050,9 +1111,9 @@ ul{
         border-style: solid;
         display: inline-block;
         padding: 20px 35px;
-      }
-    
-      .cardItemFuturismo {
+    }
+
+    .cardItemFuturismo {
         font-size: 20px;
         margin-left: 150px;
         background-color: #ffffff;
@@ -1065,7 +1126,7 @@ ul{
         padding-top: 10px;
         margin-top: 8px;
     }
-    
+
     .cardItemSurrealismo {
         font-size: 20px;
         margin-left: 150px;
@@ -1077,9 +1138,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .cardItemVanguardas {
+    }
+
+    .cardItemVanguardas {
         font-size: 20px;
         margin-left: 150px;
         background-color: #ffffff;
@@ -1091,7 +1152,7 @@ ul{
         margin-top: 8px;
         padding: 20px 35px;
     }
-    
+
     .cardItemSambaqui {
         font-size: 20px;
         margin-left: 15%;
@@ -1103,9 +1164,9 @@ ul{
         display: inline-block;
         padding: 20px 35px;
         margin-top: 8px;
-      }
-    
-      .imgSambaqui {
+    }
+
+    .imgSambaqui {
         width: 400px;
         height: 300px;
         margin-left: 200px;
@@ -1116,44 +1177,46 @@ ul{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-      }
-      .imgSurrealismo {
+    }
+
+    .imgSurrealismo {
         width: 500px;
         height: 300px;
         margin-top: 8px;
         margin-top: 8px;
         padding-left: 250px;
-      }
-    
-      .imgExpressionismo{
+    }
+
+    .imgExpressionismo {
         width: 500px;
         height: 300px;
         margin-top: 10px;
         margin-top: 10px;
         padding-left: 250px;
-      }
-    
-      .imgCubismo {
+    }
+
+    .imgCubismo {
         width: 400px;
         height: 300px;
         margin-left: 200px;
         margin-top: 8px;
-      }
-    
-    .card-item:hover{
-        transform: scale(1.1);
-    
     }
-    
-    .conteudoDentro{
+
+    .card-item:hover {
+        transform: scale(1.1);
+
+    }
+
+    .conteudoDentro {
         text-indent: 2cm;
         padding-bottom: 10px;
         padding-top: 10px;
     }
-    ul{
+
+    ul {
         padding-left: 2cm;
     }
-    
+
     .containerVan {
         max-width: 1230px;
         display: grid;
@@ -1164,7 +1227,7 @@ ul{
         justify-content: center;
         align-items: center;
     }
-    
+
     .footer {
         margin-top: 10px;
         left: 0;
@@ -1177,9 +1240,8 @@ ul{
         border-width: 2px;
         border-style: solid;
         margin-top: 20px;
-    
+
     }
-    
-    
-  }
-  
+
+
+}
