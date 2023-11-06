@@ -779,10 +779,11 @@ ul {
     .containerIndex {
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding-left: 170px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 25px;
     }
+    
 
     .nav-conteudo:hover {
         color: black;
@@ -1042,8 +1043,8 @@ ul {
     }
 
     .img {
-        width: 400px;
-        height: 355px;
+        width: 350px;
+        height: 300px;
         padding-left: 0;
         border-radius: 10px;
         margin-top: 50px;
@@ -1067,9 +1068,10 @@ ul {
     .containerIndex {
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding-left: 170px;
+        grid-template-columns: repeat(auto-fit , minmax (400px, 1fr));
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 5px;
     }
 
     .nav-conteudo:hover {
@@ -1079,12 +1081,11 @@ ul {
 
     .card-item {
         margin-top: 8px;
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         border-radius: 5px;
         transition: transform .2s;
-        padding-right: 20px;
-        padding-bottom: 50px;
+        padding: 0;
     }
 
     .cardItemCubismo {
