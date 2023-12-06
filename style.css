@@ -313,7 +313,7 @@ h3 {
     
     .nav-home .nav-conteudo {
         font-family: 'Bree Serif', serif;
-        font-size: 35px;
+        font-size: 40px;
         display: block;
         color: rgb(242 168 29);
         text-decoration: none;
@@ -392,7 +392,7 @@ h3 {
     }
     .nav-home .nav-conteudo {
         font-family: 'Bree Serif', serif;
-        font-size: 15px;
+        font-size: 30px;
         display: block;
         color: rgb(242 168 29);
         text-align: center;
@@ -405,7 +405,7 @@ h3 {
     }
 
     .banner h1 {
-        font-size: 25px;
+        font-size: 40px;
         width: 100%;
         padding: 20px 0;
         display: flex;
@@ -430,18 +430,6 @@ h3 {
     }
 }
 
-.banner h1 {
-    font-size: 80px;
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    background-image: var(--gradiente);
-    background-clip: text;
-    text-align: center;
-    -webkit-background-clip: text;
-    font-family: 'Bree Serif', serif;
-    color: transparent;
-}
 
 @media (max-width: 600px) {
     .nav-home {
@@ -473,6 +461,19 @@ h3 {
         align-items: center;
         margin-bottom: 4%;
     }
+
+    .banner h1 {
+        font-size: 40px;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        background-image: var(--gradiente);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Bree Serif', serif;
+        color: transparent;
+    }
+    
 }
 
 @media (max-width: 400px) {
@@ -494,8 +495,19 @@ h3 {
         padding: 0;
     }
 
+    .banner h1 {
+        font-size: 30px;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        background-image: var(--gradiente);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Bree Serif', serif;
+        color: transparent;
+    }
     .imgCardItemText {
-        width: 250px;
+        width: 200px;
         height: 300px;
         margin: auto;
         display: grid;
@@ -504,6 +516,30 @@ h3 {
         justify-content: center;
         align-items: center;
         margin-bottom: 4%;
+    }
+
+    .conteudoDentro {
+        text-indent: 2cm;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 100%;
+    
+    }
+
+    h2 {
+        color: #000;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'ADLaM Display', cursive;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'DM Serif Display', serif;
+        font-family: 'Ultra', serif;
+        color: #000;
+        padding-bottom: 12px;
     }
 }
 
