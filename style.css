@@ -269,7 +269,7 @@ h3 {
 
 }
 
-ul {
+.p{
     text-indent: 2cm;
 }
 
@@ -305,7 +305,6 @@ ul {
 /*==================================
     RESPONSIVIDADE
 ==================================*/
-
 @media (max-width: 1500px) {
     .nav-home {
         float: none;
@@ -337,71 +336,6 @@ ul {
         justify-content: center;
         align-items: center;
         margin-bottom: 4%;
-    }
-    
-    .banner h1 {
-        font-size: 80px;
-        width: 100%;
-        padding: 20px 0;
-        display: flex;
-        background-image: var(--gradiente);
-        background-clip: text;
-        text-align: center;
-        -webkit-background-clip: text;
-        font-family: 'Bree Serif', serif;
-        color: transparent;
-    }
-    
-}
-@media (max-width: 600px) {
-    .nav-home {
-        float: none;
-        text-align: center;
-    }
-    .nav-home .nav-conteudo {
-        font-family: 'Bree Serif', serif;
-        font-size: 25px;
-        display: block;
-        color: rgb(242 168 29);
-        text-align: center;
-        /*padding: 20px 25px;*/
-        text-decoration: none;
-        transition: transform .2s;
-    }
-    nav ul {
-        padding: 0;
-    }
-}
-
-@media (max-width: 800px) {
-    .nav-home {
-        float: center;
-    }
-    .nav-home .nav-conteudo {
-        font-family: 'Bree Serif', serif;
-        font-size: 15px;
-        display: block;
-        color: rgb(242 168 29);
-        text-align: center;
-        padding: 10px 15px;
-        text-decoration: none;
-        transition: transform .2s;
-    }
-    nav ul {
-        padding: 0;
-    }
-
-    .banner h1 {
-        font-size: 25px;
-        width: 100%;
-        padding: 20px 0;
-        display: flex;
-        background-image: var(--gradiente);
-        background-clip: text;
-        -webkit-background-clip: text;
-        font-family: 'Bree Serif', serif;
-        color: transparent;
-        text-align: center;
     }
 }
 
@@ -452,3 +386,132 @@ ul {
     
 }
 
+@media (max-width: 800px) {
+    .nav-home {
+        float: center;
+    }
+    .nav-home .nav-conteudo {
+        font-family: 'Bree Serif', serif;
+        font-size: 15px;
+        display: block;
+        color: rgb(242 168 29);
+        text-align: center;
+        padding: 10px 15px;
+        text-decoration: none;
+        transition: transform .2s;
+    }
+    nav ul {
+        padding: 0;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        background-image: var(--gradiente);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Bree Serif', serif;
+        color: transparent;
+        text-align: center;
+    }
+
+    .imgCardItemText {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        display: grid;
+        grid-template-areas: "main";
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+}
+
+.banner h1 {
+    font-size: 80px;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    background-image: var(--gradiente);
+    background-clip: text;
+    text-align: center;
+    -webkit-background-clip: text;
+    font-family: 'Bree Serif', serif;
+    color: transparent;
+}
+
+@media (max-width: 600px) {
+    .nav-home {
+        float: none;
+        text-align: center;
+    }
+    .nav-home .nav-conteudo {
+        font-family: 'Bree Serif', serif;
+        font-size: 25px;
+        display: block;
+        color: rgb(242 168 29);
+        text-align: center;
+        /*padding: 20px 25px;*/
+        text-decoration: none;
+        transition: transform .2s;
+    }
+    nav ul {
+        padding: 0;
+    }
+
+    .imgCardItemText {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        display: grid;
+        grid-template-areas: "main";
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-home {
+        float: none;
+        text-align: center;
+    }
+    .nav-home .nav-conteudo {
+        font-family: 'Bree Serif', serif;
+        font-size: 25px;
+        display: block;
+        color: rgb(242 168 29);
+        text-align: center;
+        /*padding: 20px 25px;*/
+        text-decoration: none;
+        transition: transform .2s;
+    }
+    nav ul {
+        padding: 0;
+    }
+
+    .imgCardItemText {
+        width: 250px;
+        height: 300px;
+        margin: auto;
+        display: grid;
+        grid-template-areas: "main";
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+}
+
+
+
+
+
+
+
+
+ 
